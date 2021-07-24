@@ -25,3 +25,8 @@ $ docker container rm container_name or CONTAINER ID
 
 # run docker-compose.yml
 $ docker-compose up
+
+# formatted output of docker ps
+# for more - https://docs.docker.com/engine/reference/commandline/ps/#formatting
+$ docker ps --format '{{.ID}}: {{.Names}}'
+
