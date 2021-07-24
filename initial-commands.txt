@@ -1,0 +1,27 @@
+# Play as $USER in 'docker' group
+# get info about -aG try $ usermod --help
+
+    $ sudo usermod -aG docker $USER
+
+# switch group
+$ newgrp docker
+
+# check images
+$ docker image ls
+
+# check running container
+$ docker ps
+or
+$ docker container ls
+
+# check all container
+$ docker container ls -a
+
+# remove image
+$ docker rmi image_name:tag or IMAGE ID
+
+# remove container
+$ docker container rm container_name or CONTAINER ID
+
+# run docker-compose.yml
+$ docker-compose up
