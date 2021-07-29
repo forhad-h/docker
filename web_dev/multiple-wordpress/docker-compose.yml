@@ -21,6 +21,8 @@ services:
     depends_on:
       - db_wp_dev
     environment:
+      WORDPRESS_DB_NAME: exper
+      WORDPRESS_DB_HOST: db_wp_dev
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: 11111111
     ports:
@@ -37,6 +39,8 @@ services:
     depends_on:
       - db_wp_dev
     environment:
+      WORDPRESS_DB_NAME: rehabit
+      WORDPRESS_DB_HOST: db_wp_dev
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: 11111111
     ports:
